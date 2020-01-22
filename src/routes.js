@@ -2,7 +2,8 @@ import React from 'react';
 
 // Import all components
 const Main = React.lazy(() => import('./pages/Home/indexRoot'));
-const MiaoMiao = React.lazy(() => import('./pages/Business/MiaoMiao'));
+const MiaoMiao = React.lazy(() => import('./pages/MiaoMiao/MiaoMiao'));
+const MiaoMiaoHome = React.lazy(() => import('./pages/MiaoMiao/index'));
 const Agency = React.lazy(() => import('./pages/Agency/index'));
 const Saas = React.lazy(() => import('./pages/Saas/index'));
 const Apps = React.lazy(() => import('./pages/Apps/index'));
@@ -44,7 +45,9 @@ const PageWorkDetail = React.lazy(() => import('./pages/PageWorkDetail'));
 const routes = [
 
     // public Routes
+   
     { path: '/MiaoMiao', component: MiaoMiao },
+    { path: '/', component: MiaoMiaoHome },
     { path: '/index-saas', component: Saas },
     { path: '/index-apps', component: Apps },
     { path: '/index-agency', component: Agency },
