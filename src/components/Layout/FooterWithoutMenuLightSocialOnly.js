@@ -11,20 +11,20 @@ class FooterWithoutMenuLightSocialOnly extends Component {
     render() {
         return (
             <React.Fragment>
-                <footer className="footer footer-bar bg-light">
+                <footer className="footer footer-bar">
                     <div className="container text-center">
                         <div className="row align-items-center">
                             <div className="col-sm-6">
                                 <div className="text-sm-left">
-                                    <p className="mb-0 text-dark"> Miao Miao Help Center. Powered by <a href="https://klementtan.com">Klement Tan</a>.</p>
+                                    <p className="mb-0"> Miao Miao Help Center. Powered by <a href="https://klementtan.com">Klement Tan</a>.</p>
                                 </div>
                             </div>
 
                             <div className="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <ul className="list-unstyled social-icon social text-sm-right mb-0">
-                                    <li className="list-inline-item mb-0"><Link to="#" className="rounded mr-1 text-dark"><i className="mdi mdi-whatsapp" title="Whatsapp"></i></Link></li>
-                                    <li className="list-inline-item mb-0"><Link to="#" className="rounded mr-1 text-dark"><i className="mdi mdi-gmail" title="GMAIL"></i></Link></li>
-                                    <li className="list-inline-item mb-0"><Link to="#" className="rounded mr-1 text-dark"><i className="mdi mdi-instagram" title="Instagram"></i></Link></li>
+                                    <li className="list-inline-item mb-0"><a href="#" className="rounded mb-0"><i className="mdi mdi-whatsapp" title="Whatsapp"></i></a></li>
+                                    <li className="list-inline-item mb-0"><a href="#" className="rounded mb-0"><i className="mdi mdi-gmail" title="GMAIL"></i></a></li>
+                                    <li className="list-inline-item mb-0"><a href="https://www.instagram.com/type1who/" className="rounded mb-0"><i className="mdi mdi-instagram" title="Instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>

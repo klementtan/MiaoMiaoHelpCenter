@@ -4,8 +4,6 @@ import { withRouter } from 'react-router-dom';
 // Layout Components
 import Topbar from './Topbar';
 import Footer from './Footer';
-import FooterLight from './FooterLight';
-import FooterWithoutMenu from './FooterWithoutMenu';
 import FooterWithoutMenuLightSocialOnly from './FooterWithoutMenuLightSocialOnly';
 
 // Scroll up button
