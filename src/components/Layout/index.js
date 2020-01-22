@@ -28,31 +28,7 @@ class Layout extends Component {
       <React.Fragment>
         <Topbar />
         {this.props.children}
-        {(() => {
-          if (this.props.location.pathname === "/index-marketing" || this.props.location.pathname === "/index-modern-business" || this.props.location.pathname === "/index-services") {
-            return (
-              <FooterLight />
-            )
-          } else if (this.props.location.pathname === "/index-personal") {
-            return (
-              <FooterWithoutMenu />
-            )
-          }
-          else if (this.props.location.pathname === "/index-portfolio") {
-            return (
-              <FooterWithoutMenuLightSocialOnly />
-            )
-          }
-          else if (this.props.location.pathname === "/page-contact-two") {
-            return (
-              <FooterWithoutMenuLightSocialOnly />
-            )
-          } else {
-            return (
-              <Footer />
-            )
-          }
-        })()}
+        <FooterWithoutMenuLightSocialOnly />
         <div id="bottomIcon">
           <ScrollUpButton ContainerClassName="back-to-top rounded text-center"  />
         </div>
