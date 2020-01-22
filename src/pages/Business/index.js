@@ -8,7 +8,8 @@ import Typist from 'react-typist';
 import busi01 from '../../images/busi01.jpg';
 
 // import generic component
-import Feature  from './Feature';
+import About  from './About';
+import Contact from './Contact'
 import Cta from './Cta';
 import Pricing from './Pricing';
 import News from './News';
@@ -47,7 +48,6 @@ class Index extends Component {
         return (
             <React.Fragment>
                 
-    
                {/* Hero Start */}
                 <section className="bg-half-170 border-bottom" id="home">
                     <div className="home-center">
@@ -56,34 +56,16 @@ class Index extends Component {
                                 <Row className="align-items-center">
                                     <Col lg={6} md={7}>
                                         <div className="title-heading mt-4">
-                                            <div className="alert alert-light rounded-pill d-inline-block" role="alert"> <span className="badge rounded badge-secondary mr-2">Simple</span> Build <span className="text-success">anything</span> you want - Landrick</div>
-                                            <h1 className="heading mt-3 mb-3">Leading Digital Business For &nbsp;
-                                            <Typist style={{ display : "contents" }}>
-                                            <span className="element text-primary">Agency</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Software</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Technology</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Studio</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Webapps</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Agency</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Software</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Technology</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Studio</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                            <span className="element text-primary">Webapps</span>
-                                            <Typist.Backspace count={15} delay={200} />
-                                             </Typist>&nbsp;
-                                            Solution</h1>
-                                            <p className="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                                            <h1 className="heading mt-3 mb-3">
+                                              <span className="element text-primary">
+                                                MiaoMiao
+                                                &nbsp;
+                                              </span> 
+                                              Trial Help Centre 
+                                            </h1>
+                                            <p className="para-desc text-muted">Brought to you by a fellow type 1 diabetic and her geeky Dad.</p>
                                             <div className="mt-4">
-                                                <Link to="#" className="btn btn-outline-primary rounded">Make Your Shop</Link>
+                                                <Link to="/MiaoMiao" className="btn btn-outline-primary rounded">Learn More About MiaoMiao</Link>
                                             </div>
                                         </div>
                                     </Col>
@@ -103,17 +85,10 @@ class Index extends Component {
                     </div>
                 </section>
 
-                {/* Feature */}
-                <Feature />
+                {/* About */}
+                <About />
 
-                {/* Cta */}
-                <Cta />
-
-                {/* Pricing */}
-                <Pricing />
-
-                {/* News */}
-                <News />
+                <Contact/>
 
             </React.Fragment>
         );
