@@ -1,7 +1,8 @@
 // React Basic and Bootstrap
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import { Row, Col } from 'reactstrap';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class MiaoMiao extends Component {
 
@@ -11,6 +12,7 @@ class MiaoMiao extends Component {
 
         }
     }
+
     componentDidMount() {
         document.body.classList = "";
         window.addEventListener("scroll", this.scrollNavigation, true);
@@ -35,7 +37,6 @@ class MiaoMiao extends Component {
 
         return (
             <React.Fragment>
-
                 <section className="bg-half bg-light">
                     <div className="home-center">
                         <div className="home-desc-center">
@@ -60,7 +61,7 @@ class MiaoMiao extends Component {
                     <div className="container">
                         <Row>
                             <Col>
-                                <h2 >What is MiaoMiao</h2>
+                                <h2 id='what-is-miao-miao' name='what-is-miao-miao'>What is MiaoMiao</h2>
                                 <p className="text-muted">MiaoMiao is a device that is placed atop the Libre sensor. Think of the MiaoMiao as a bridge between your phone and the Libre. It is responsible for collecting BG data every few minutes from your Libre and sends it to your phone via Bluetooth.
                                 Unfortunately in Singapore, there are no healthcare companies (e.g. Dexcom) that sells CGM. Therefore, the combination of MiaoMiao + Libre is the only option which enables you to enjoy the benefits of a CGM.</p>
                                 <br/>

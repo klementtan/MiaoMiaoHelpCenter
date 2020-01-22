@@ -10,6 +10,8 @@ import busi01 from '../../images/busi01.jpg';
 // import generic component
 import About  from './About';
 import Contact from './Contact'
+import Topbar from '../../components/Layout/Topbar'
+
 
 class Index extends Component {
 
@@ -34,7 +36,7 @@ class Index extends Component {
           var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
           if(top > 80)
           {
-               document.getElementById('topnav').classList.add('nav-sticky');
+            document.getElementById('topnav').classList.add('nav-sticky');
           } else {
             document.getElementById('topnav').classList.remove('nav-sticky');
           }
@@ -44,7 +46,7 @@ class Index extends Component {
 
         return (
             <React.Fragment>
-                
+              <Topbar/>
                {/* Hero Start */}
                 <section className="bg-half-170 border-bottom" id="home">
                     <div className="home-center">

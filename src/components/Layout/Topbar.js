@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from "react-router";
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.ScrollLink
 
 class Topbar extends Component {
 
@@ -61,50 +63,60 @@ class Topbar extends Component {
     }
 
     render() {
-        return (
-            <React.Fragment>
-                <header id="topnav" className="defaultscroll sticky">
-                    <div className="container">
-                        <div>
-                            <Link className="logo" to="/">Miao Miao Help Center<span className="text-primary">.</span></Link>
-                        </div>
-                        <div className="menu-extras">
-                            <div className="menu-item">
-                                <Link to="#" onClick={ this.toggleLine } className={this.state.isOpen ? "navbar-toggle open" : "navbar-toggle" } >
-                                    <div className="lines">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div id="navigation" style={{ display : this.state.isOpen ? "block" : "none" }}>
-                            <ul className="navigation-menu" id="top-menu">
-                                <li><Link to="/">Home</Link></li>
-                                <li className="has-submenu">
-                                    <Link  to="/#" onClick={(event) => {  event.preventDefault();  this.setState({ landing : !this.state.landing }) } }>Miao Miao</Link>
-                                    <span className="menu-arrow"></span>
-                                    <ul  className={ this.state.landing ? "submenu megamenu open" : "submenu megamenu" }  >
-                                        <li>
-                                            <ul>
-                                                <li><Link to="/index-saas">What is Miao Miao?</Link></li>
-                                                <li><Link to="/index-agency">Why use Miao Miao?</Link></li>
-                                                <li><Link to="/index-apps">How it works?</Link></li>
-                                                <li><Link to="/index-studio">Setpup</Link></li>
-                                                <li><Link to="/index-business">Day-to-Day Use</Link></li>
-                                                <li><Link to="/index-modern-business">Where to Buy</Link></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+      return (
+        <React.Fragment>
+            <header id="topnav" className="defaultscroll sticky">
+                <div className="container">
+                    <div>
+                        <Link className="logo" to="/">Miao Miao Help Center<span className="text-primary">.</span></Link>
+                    </div>
+                    <div className="menu-extras">
+                        <div className="menu-item">
+                            <Link to="#" onClick={ this.toggleLine } className={this.state.isOpen ? "navbar-toggle open" : "navbar-toggle" } >
+                                <div className="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </Link>
                         </div>
                     </div>
-                </header>
-            </React.Fragment>
-        );
+
+                    <div id="navigation" style={{ display : this.state.isOpen ? "block" : "none" }}>
+                        <ul className="navigation-menu" id="top-menu">
+                            <li><Link to="/">Home</Link></li>
+                            <li className="has-submenu">
+                                <Link  to="/#" onClick={(event) => {  event.preventDefault();  this.setState({ landing : !this.state.landing }) } }>Miao Miao</Link>
+                                <span className="menu-arrow"></span>
+                                <ul  className={ this.state.landing ? "submenu megamenu open" : "submenu megamenu" }  >
+                                    <li>
+                                        <ul>
+                                          <li><ScrollLink 
+                                              to="example-destination" 
+                                              spy={true} 
+                                              smooth={true} 
+                                              duration={500} 
+                                              className='some-class' 
+                                              activeClass='some-active-class'
+                                            >
+                                              Scroll what is Miao Miao
+                                            </ScrollLink>  </li>
+                                            <li><Link to="/index-saas">What is Miao Miao?</Link></li>
+                                            <li><Link to="/index-agency">Why use Miao Miao?</Link></li>
+                                            <li><Link to="/index-apps">How it works?</Link></li>
+                                            <li><Link to="/index-studio">Setpup</Link></li>
+                                            <li><Link to="/index-business">Day-to-Day Use</Link></li>
+                                            <li><Link to="/index-modern-business">Where to Buy</Link></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </React.Fragment>
+      );
     }
 }
 
