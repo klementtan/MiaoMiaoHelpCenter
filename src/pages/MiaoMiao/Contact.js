@@ -44,7 +44,7 @@ class Contact extends Component {
                                 <div className="content mt-3">
                                     <h4 className="title font-weight-bold">Phone</h4>
                                     <p className="text-muted">Contact me via Whatsapp</p>
-                                    <Link to="tel:+152534-468-854" className="text-primary">+XXX XXXX</Link>
+                                    <Link to="tel:+152534-468-854" className="text-primary">+91688033</Link>
                                 </div>
                               </div>
                             </Col>
@@ -56,7 +56,19 @@ class Contact extends Component {
                                   <div className="content mt-3">
                                       <h4 className="title font-weight-bold">Email</h4>
                                       <p className="text-muted">Contact me via email</p>
-                                      <Link to="mailto:contact@example.com" className="text-primary">contact@example.com</Link>
+                                      <Link to="mailto:contact@example.com" className="text-primary">gaykeong@gmail.com</Link>
+                                  </div>
+                              </div>
+                            </Col>
+                            <Col>
+                              <div className="contact-detail text-center">
+                                  <div className="icon">
+                                      <img src={contact} alt="Landrick" />
+                                  </div>
+                                  <div className="content mt-3">
+                                      <h4 className="title font-weight-bold">MiaoMiao free trail</h4>
+                                      <p className="text-muted">Sign up for free Miao Miao free trail</p>
+                                      <Link to="https://bit.ly/miaomiaofreetrial" className="text-primary">Sign up here!</Link>
                                   </div>
                               </div>
                             </Col>

@@ -1,6 +1,7 @@
 // React Basic and Bootstrap
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
+import { Link } from 'react-router-dom';
 import setUpOverview from '../../images/MiaoMiao/miaomiao-setup-overview.png';
 import miaoMiaoWatch from '../../images/MiaoMiao/MiaoMiaoWatch.png';
 import nightScoutSettings from '../../images/MiaoMiao/nightScoutSettings.png';
@@ -8,7 +9,6 @@ import nightScoutReport from '../../images/MiaoMiao/nightScoutReport.png';
 import { Row, Col } from 'reactstrap';
 import InstagramEmbed from 'react-instagram-embed';
 import {Helmet} from "react-helmet";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class MiaoMiaoSetUp extends Component {
 

@@ -8,6 +8,7 @@ import Typist from 'react-typist';
 import busi01 from '../../images/busi01.jpg';
 
 // import generic component
+import services from '../../images/illustrator/services.svg';
 import About  from './About';
 import Contact from './Contact'
 import Topbar from '../../components/Layout/Topbar'
@@ -63,21 +64,15 @@ class Index extends Component {
                                               Trial Help Centre 
                                             </h1>
                                             <p className="para-desc text-muted">Brought to you by a fellow type 1 diabetic and her geeky Dad.</p>
-                                            <div className="mt-4">
-                                                <Link to="/MiaoMiaoInfo" className="btn btn-outline-primary rounded">Learn More About MiaoMiao</Link>
+                                            <div className="mt-4 pt-2">
+                                                <Link to="/MiaoMiaoInfo" className="btn btn-outline-white rounded mb-2">MiaoMiao</Link>
+                                                <Link to="/MiaoMiaoSetup" className="btn btn-outline-primary rounded">Setup MiaoMiao</Link>
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={6} md={5} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                                        <div className="position-relative">
-                                            <img src={busi01} className="rounded img-fluid mx-auto d-block" alt="" />
-                                            <div className="play-icon">
-                                                <Link to="//vimeo.com/287684225" className="play-btn video-play-icon">
-                                                    <i className="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </Col>
+                                    <div className="col-lg-5 col-md-5 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                          <img src={services} className="img-fluid mover" alt="" />     
+                                    </div>
                                 </Row>
                             </div>
                         </div>

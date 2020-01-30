@@ -1,9 +1,9 @@
 // React Basic and Bootstrap
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 import howMiaoMiaoWorks from '../../images/MiaoMiao/how_miaomiao_works.png';
 import { Row, Col } from 'reactstrap';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class MiaoMiaoInfo extends Component {
 
