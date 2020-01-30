@@ -5,7 +5,7 @@ import howMiaoMiaoWorks from '../../images/MiaoMiao/how_miaomiao_works.png';
 import { Row, Col } from 'reactstrap';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-class MiaoMiao extends Component {
+class MiaoMiaoInfo extends Component {
 
     constructor(props) {
         super(props);
@@ -184,8 +184,9 @@ class MiaoMiao extends Component {
                                   </ul>
                                 <h2>How it works?</h2>
                                 <img class="img-fluid mx-auto d-block" src={howMiaoMiaoWorks} alt="How Miao Miao works flow chart"></img>
-                                <h2>Things you need</h2>
+                                
                                 <ul className="list-group mt-4">
+                                  <h2>Things you need</h2>
                                   <li className="list-inline-item text-muted"> - Abbott Freestyle Libre Sensor - preferably newly installed</li>
                                   <li className="list-inline-item text-muted"> - MiaoMiao - we will provide that together with the charger, stickers and armband</li>
                                   <li className="list-inline-item text-muted"> - Smart Phone to install app for capturing, displaying and storing BG data</li>
@@ -202,4 +203,4 @@ class MiaoMiao extends Component {
     }
 }
 
-export default MiaoMiao;
+export default MiaoMiaoInfo;

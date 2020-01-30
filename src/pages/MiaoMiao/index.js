@@ -64,7 +64,7 @@ class Index extends Component {
                                             </h1>
                                             <p className="para-desc text-muted">Brought to you by a fellow type 1 diabetic and her geeky Dad.</p>
                                             <div className="mt-4">
-                                                <Link to="/MiaoMiao" className="btn btn-outline-primary rounded">Learn More About MiaoMiao</Link>
+                                                <Link to="/MiaoMiaoInfo" className="btn btn-outline-primary rounded">Learn More About MiaoMiao</Link>
                                             </div>
                                         </div>
                                     </Col>

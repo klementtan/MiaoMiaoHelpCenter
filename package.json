@@ -13,6 +13,8 @@
     "react-countup": "^4.2.2",
     "react-datepicker": "^2.9.6",
     "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-instagram-embed": "^1.5.0",
     "react-modal-video": "^1.2.3",
     "react-parallax": "^2.2.4",
     "react-responsive-carousel": "^3.1.51",

@@ -101,12 +101,8 @@ class Topbar extends Component {
                                             >
                                               Scroll what is Miao Miao
                                             </ScrollLink>  </li>
-                                            <li><Link to="/index-saas">What is Miao Miao?</Link></li>
-                                            <li><Link to="/index-agency">Why use Miao Miao?</Link></li>
-                                            <li><Link to="/index-apps">How it works?</Link></li>
-                                            <li><Link to="/index-studio">Setpup</Link></li>
-                                            <li><Link to="/index-business">Day-to-Day Use</Link></li>
-                                            <li><Link to="/index-modern-business">Where to Buy</Link></li>
+                                            <li><Link to="/MiaoMiaoInfo">What is Miao Miao?</Link></li>
+                                            <li><Link to="/MiaoMiaoSetup">Miao Miao Set-up guide</Link></li>
                                         </ul>
                                     </li>
                                 </ul>
