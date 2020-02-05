@@ -85,6 +85,8 @@ class Topbar extends Component {
                     <div id="navigation" style={{ display : this.state.isOpen ? "block" : "none" }}>
                         <ul className="navigation-menu" id="top-menu">
                             <li><Link to="/">Home</Link></li>
+                            <li><Link to="/PageBlog">PageBlog</Link></li>
+                            <li><Link to="/PageBlogDetail">PageBlogde</Link></li>
                             <li className="has-submenu">
                                 <Link  to="/#" onClick={(event) => {  event.preventDefault();  this.setState({ landing : !this.state.landing }) } }>Miao Miao</Link>
                                 <span className="menu-arrow"></span>

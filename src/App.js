@@ -32,7 +32,7 @@ class App extends Component {
             {routes.map((route, idx) =>
                 <Route path={route.path} component={withLayout(route.component)} key={idx} />
             )}
-            </Switch>
+          </Switch>
           </React.Suspense>
         </Router>
       </React.Fragment>
